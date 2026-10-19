@@ -416,3 +416,9 @@ ul.rodape__links[role="list"] { display: flex; flex-wrap: wrap; justify-content:
   .js .entra[data-lado] { opacity: 1; transform: none; }
   .botao, .link, .faq summary { transition: none; }
 }
+
+
+/* Regra do Armin, 19/10/2026 (§0 "Rolagem leve no celular"): sem vidro desfocado no celular; fundo quase opaco. Aplicado por aplicar-carregamento.mjs. */
+@media (max-width: 899px) {
+  .cabecalho { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(255, 255, 255, 0.96); }
+}

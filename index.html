@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" media="(max-width: 899px)" imagesrcset="assets/img/heroi-retrato-480.webp 480w, assets/img/heroi-retrato-960.webp 960w" imagesizes="100vw">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <script type="application/ld+json">
@@ -102,19 +103,21 @@
       </div>
       <div class="retrato heroi__retrato">
         <picture>
-          <source srcset="assets/img/heroi-retrato.webp" type="image/webp">
-          <img src="assets/img/heroi-retrato.jpg" width="1560" height="1950" alt="Mari Barboza, advogada criminalista, sorrindo, com um tablet nas mãos" fetchpriority="high">
-        </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/heroi-retrato-480.webp 480w, assets/img/heroi-retrato-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/heroi-retrato-960.webp 960w" sizes="100vw">
+  <img src="assets/img/heroi-retrato-960.jpg" width="1560" height="1950" alt="Mari Barboza, advogada criminalista, sorrindo, com um tablet nas mãos" decoding="async" fetchpriority="high">
+</picture>
       </div>
     </div>
   </section>
 
   <!-- 2. Situações (faixa preta) -->
   <section class="secao faixa" id="situacoes">
-    <picture class="faixa__fundo">
-      <source srcset="assets/img/faixa-marmore.webp" type="image/webp">
-      <img src="assets/img/faixa-marmore.jpg" width="2000" height="1333" alt="" loading="lazy">
-    </picture>
+    <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/faixa-marmore-480.webp 480w, assets/img/faixa-marmore-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/faixa-marmore-960.webp 960w, assets/img/faixa-marmore-1600.webp 1600w" sizes="50vw">
+  <img src="assets/img/faixa-marmore-960.jpg" width="2000" height="1333" alt="" decoding="async">
+</picture>
     <div class="container--estreito faixa__conteudo">
       <p class="rotulo">Em que situações atuo</p>
       <h2>Uma intimação. <em>Uma prisão em flagrante.</em></h2>
@@ -155,15 +158,17 @@
       <div class="funciona__imagens">
         <div class="midia funciona__img funciona__img--mensagem">
           <picture>
-            <source srcset="assets/img/funciona-mensagem.webp" type="image/webp">
-            <img src="assets/img/funciona-mensagem.jpg" width="1600" height="1200" alt="Mãos digitando uma mensagem no celular" loading="lazy">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/funciona-mensagem-480.webp 480w, assets/img/funciona-mensagem-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/funciona-mensagem-960.webp 960w, assets/img/funciona-mensagem-1600.webp 1600w" sizes="50vw">
+  <img src="assets/img/funciona-mensagem-960.jpg" width="1600" height="1200" alt="Mãos digitando uma mensagem no celular" decoding="async">
+</picture>
         </div>
         <div class="midia funciona__img funciona__img--detalhe">
           <picture>
-            <source srcset="assets/img/funciona-detalhe.webp" type="image/webp">
-            <img src="assets/img/funciona-detalhe.jpg" width="900" height="675" alt="Mãos de Mari Barboza com caneta e tablet" loading="lazy">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/funciona-detalhe-480.webp 480w, assets/img/funciona-detalhe-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/funciona-detalhe-960.webp 960w" sizes="50vw">
+  <img src="assets/img/funciona-detalhe-960.jpg" width="900" height="675" alt="Mãos de Mari Barboza com caneta e tablet" decoding="async" loading="lazy">
+</picture>
         </div>
       </div>
     </div>
@@ -185,9 +190,10 @@
       </div>
       <div class="retrato sobre__retrato">
         <picture>
-          <source srcset="assets/img/sobre-retrato.webp" type="image/webp">
-          <img src="assets/img/sobre-retrato.jpg" width="1600" height="2000" alt="Mari Barboza lendo no tablet, com uma caneta na mão" loading="lazy">
-        </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/sobre-retrato-480.webp 480w, assets/img/sobre-retrato-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/sobre-retrato-960.webp 960w, assets/img/sobre-retrato-1600.webp 1600w" sizes="50vw">
+  <img src="assets/img/sobre-retrato-960.jpg" width="1600" height="2000" alt="Mari Barboza lendo no tablet, com uma caneta na mão" decoding="async" loading="lazy">
+</picture>
       </div>
       <div class="sobre__texto">
         <p>Sou advogada e atuo exclusivamente em casos criminais.</p>
@@ -210,9 +216,10 @@
       </div>
       <div class="midia atuacao__faixa">
         <picture>
-          <source srcset="assets/img/atuacao-papeis.webp" type="image/webp">
-          <img src="assets/img/atuacao-papeis.jpg" width="1600" height="1200" alt="" loading="lazy">
-        </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/atuacao-papeis-480.webp 480w, assets/img/atuacao-papeis-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/atuacao-papeis-960.webp 960w, assets/img/atuacao-papeis-1600.webp 1600w" sizes="50vw">
+  <img src="assets/img/atuacao-papeis-960.jpg" width="1600" height="1200" alt="" decoding="async" loading="lazy">
+</picture>
       </div>
       <ul class="atuacao__lista" role="list">
         <li><div class="entra" data-lado="esq"><h3>Delegacia e investigação</h3><p>Se você foi intimado, estou presente no depoimento ou no interrogatório e trabalho na investigação e na produção de provas.</p></div></li>
@@ -267,9 +274,10 @@
       </div>
       <div class="midia perguntas__img">
         <picture>
-          <source srcset="assets/img/perguntas-luz.webp" type="image/webp">
-          <img src="assets/img/perguntas-luz.jpg" width="1600" height="1200" alt="" loading="lazy">
-        </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/perguntas-luz-480.webp 480w, assets/img/perguntas-luz-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/perguntas-luz-960.webp 960w, assets/img/perguntas-luz-1600.webp 1600w" sizes="50vw">
+  <img src="assets/img/perguntas-luz-960.jpg" width="1600" height="1200" alt="" decoding="async" loading="lazy">
+</picture>
       </div>
       <div class="perguntas__lista">
         <div class="faq">
